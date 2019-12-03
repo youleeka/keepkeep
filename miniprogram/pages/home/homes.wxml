@@ -1,0 +1,35 @@
+<view class="group">
+  <block wx:for="{{iconSize}}">
+    <icon type="cancel" size="{{item}}"/>
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="40"/>
+  </block>
+</view>
+
+<view>
+  <progress percent="20" show-info />
+  <progress percent="40" stroke-width="12" />
+  <progress percent="60" color="pink" />
+  <progress percent="80" active />
+</view>
+
+<view>
+  <rich-text nodes="{{nodes}}" bindtap="tap"></rich-text>
+</view>
+
+<view class="btn-area">
+  <view class="body-view">
+    <text>{{text}}</text>
+    <button bindtap="add">add line</button>
+    <button bindtap="remove">remove line</button>
+  </view>
+</view>
+
+<view>
+<button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> default </button>
+  <button bindtap="setLoading">点击设置以上按钮loading属性</button>
+</view>
