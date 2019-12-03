@@ -32,4 +32,5 @@
 <view>
 <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> default </button>
   <button bindtap="setLoading">点设置以上按钮loading属性</button>
+  
 </view>
